@@ -1,0 +1,19 @@
+server:
+  contextPath: /
+  port: 8088
+spring:
+  devtools:    livereload:      enabled: false
+  datasource:    url: jdbc:h2:mem:example
+    username: sa
+    password: 
+    driver-class-name: org.h2.Driver
+    platform: h2
+    initialize: true
+    continue-on-error: false
+  jpa:    hibernate:      ddl-auto: update
+    show-sql: true
+    properties:      hibernate:
+        format_sql: true
+  h2:
+    console:      enabled: true
+    
